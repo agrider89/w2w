@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Beavers In Waco</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Lobster&display=swap" 
+        rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-text">
+                    <h1>Welcome To Waco</h1>
+                    <button class="navbar-toggler" aria-expanded="false" aria-controls="navbar-Dropdown">
+                        <span>&#9776;</span>
+                    </button>
+                    
+                    <nav id="topNav" class="navbar">
+                        <ul class="navbar-list">
+                            <li><a href="./index.html">Must See</a></li>
+                            <li><a href="./shopEat.html">Shops and Eats</a></li>
+                            <li><a href="./games.html">Games</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="hero-text">
+                        <h3>
+                        "I'm extremely easy to watch. 
+                        I think I'm generally handsome, 
+                        charming."
+                       </h3>
+                       <h5>
+                        Chip Gaines
+                       </h5>
+                    
+                </div>
+               
+            </div>
+        </header>
+        <div class="container welcome">
+            <h4>Whether it's a family visit, 
+                celebrating a birthday,
+                or giving Alex a 
+                break from the kids. Waco is Texas'
+                best kept secret and memory maker!   </h4>
+        </div>
+        <div class="container list">
+            <div class="list-text">
+                <h4>Let this webpage be your guide as you explore
+                    this beautiful stop in between Dallas and Austin.
+                </h4>
+            </div>
+        </div>
+
+        <div class="container must-see">
+            <h3>Must See</h3>
+            <div class="must-grid">
+                <div class="must-card">
+                    <img src="./assets/Silos2.png" alt="">
+                    <div class="must-text">
+                        <h3>Magnolia Silos</h3>
+                        <p>Lets face it, this is the reason
+                            y'all came. This is by far the most magical
+                            place in Waco. With so many shop, food trucks, 
+                            and sweet treats the Silos is perfect for an 
+                            all day excursion. <a href="https://magnolia.com/visit/"blank="_blank">More</a></p>
+                    </div>
+                        
+                </div>
+
+                <div class="must-card">
+                    <img src="./assets/fabled.png" alt="">
+                    <div class="must-text">
+                        <h3>Fabled Bookshop and Cafe</h3>
+                        <p>Do you love book or love the idea of owning
+                            many leather bond volumes of classic 
+                            literature? Then this is the place for you. Fabled
+                            has it all, including literally inspired beverages 
+                            for adults and kids.<a href="https://fabledbookshop.com/"target="_blank">More</a> </p>
+                    </div>
+                        
+                </div>
+
+                <div class="must-card">
+                    <img src="./assets/heritage.png" alt="">
+                    <div class="must-text">
+                        <h3>Heritage Homestead</h3>
+                        <p>Step back in time and see how
+                           people lived before TikTok. With farm
+                           fresh food and handmade goods, the Heritage 
+                           is an excellent place to shop and eat. Also it 
+                           might be a cult..not sure. <a href="https://www.homesteadheritage.com/"target="_blank"> More</a></p>
+                    </div>
+                        
+                </div>
+
+                <div class="must-card">
+                    <img src="./assets/mayborn.png" alt="">
+                    <div class="must-text">
+                        <h3>Mayborn Museum</h3>
+                        <p> Located in the Baylor University complex, this 
+                            museum is the perfect way to spend an afternoon.
+                            Explore the natural history of Waco and visit 
+                            the state of the art DC Comic exhibit going on now!  <a href="https://www.baylor.edu/mayborn/"target="_blank">More</a></p>
+                    </div>
+                        
+                </div>
+
+              
+            </div>
+
+        </div>
+        <footer>
+            <div class="contanier footer">
+                <img src="./assets/IMG_4608.jpeg" alt="no image">
+                <div class="footer-text"><h3> Alex Grider</h3>
+                <h6>Waco Resident and 
+                    Front-End Developer</h6>
+                  
+                </div>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+
+
+                <h5>© Front. 2022 Responsive designs. All rights reserved.</h5>
+
+            </div>
+
+        </footer>
+
+       
+        <script src="" async defer>
+             const nav = document.getElementById("topNav");
+            window.onscroll = function () {
+                if (window.pageYOffset >100) {
+                nav.classList.add("sticky"); 
+            } else {
+                nav.classList.remove("sticky");
+            }
+            }
+
+
+            const navButton =document.querySelector('button[aria-expanded]');
+
+            function toggleNav ({target}) {
+                const expanded = target.getAttribute('aria-expanded') ==='true' || false;
+                navButton.setAttribute('aria-expanded', !expanded)
+
+            }
+
+            navButton.addEventListener ('click', toggleNav);
+        </script>
+        <script src="https://kit.fontawesome.com/1d7c7e0333.js" 
+        crossorigin="anonymous"></script>
+    </body>
+</html>
