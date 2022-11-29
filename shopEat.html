@@ -62,7 +62,7 @@
                             diverse menu and a outdoor seating 
                             area Milo all day is an excellent 
                             dinner choice after a day's worth 
-                            of activity.<a href="https://www.milowaco.com/menus/"blank="_blank">Menu</a></p>
+                            of activity.<a href="https://www.milowaco.com/menus/"blank="_blank"> Menu</a></p>
                     </div>
                         
                 </div>
@@ -76,7 +76,7 @@
                             screaming for ice cream. What do 
                             you do?? If only there was a place 
                             you can have it all. Union Hall's 
-                            got you.<a href="https://unionhallwaco.com/vendors-union-hall/"target="_blank">Menus</a> </p>
+                            got you.<a href="https://unionhallwaco.com/vendors-union-hall/"target="_blank"> Menus</a> </p>
                     </div>
                         
                 </div>
@@ -86,7 +86,7 @@
                     <div class="must-text">
                         <h3>Pinewoods Coffee & Beer Bar</h3>
                         <p>They have coffee, fast wifi, and local beers need I say more. 
-                             <a href="https://pinewoodroasters.com/"target="_blank">Menu</a></p>
+                             <a href="https://pinewoodroasters.com/"target="_blank"> Menu</a></p>
                     </div>
                         
                 </div>
@@ -100,7 +100,7 @@
                             taste buds will be shouting praises on high
                             when you eat a sandwich or salad from this place.
 
-                             <a href="https://www.revivaleastsideeatery.com/"target="_blank">Menu</a></p>
+                             <a href="https://www.revivaleastsideeatery.com/"target="_blank"> Menu</a></p>
                     </div>
                         
                 </div>
@@ -115,7 +115,23 @@
                             at exposed beams handpicked by 
                             Joanna Gaines.
 
-                             <a href="https://magnolia.com/visit/eat/magnolia-table/"target="_blank">Menu</a></p>
+                             <a href="https://magnolia.com/visit/eat/magnolia-table/"target="_blank"> Menu</a></p>
+                    </div>
+                        
+                </div>
+                <div class="must-card">
+                    <img src="./assets/Helberg.png" alt="">
+                    <div class="must-text">
+                        <h3>Helberg BBQ</h3>
+                        <p>Nestled in just north of Lake Waco 
+                            Helberg BBQ is a great family dinning 
+                            experience. Brisket, sausage and just 
+                            down the road from Chip and Jo's house
+                            are all reasons why you should grab a 
+                            bib and head on down to the best BBQ 
+                            in town!
+
+                             <a href="https://www.helbergbarbecue.com/"target="_blank"> Menu</a></p>
                     </div>
                         
                 </div>
@@ -129,10 +145,10 @@
                     <h3>Tecovas</h3>
                     <p>Did you just get paid? Want to dress like a cowboy?
                         Want to spend your whole paycheck to look like said 
-                        cowboy? Tecovas got you covered. Rob a bank and gitty on 
+                        cowboy? Tecovas' got you covered. Rob a bank and gitty on 
                         up to Tecovas today!
 
-                         <a href="https://www.tecovas.com/?gclid=Cj0KCQiA1ZGcBhCoARIsAGQ0kkrn6CbgbC_5jI8H_Ztt4wevKlZK1AEJwwMJvfBBtL3oz0QUvN2nnJgaAiKDEALw_wcB"target="_blank">More</a></p>
+                         <a href="https://www.tecovas.com/?gclid=Cj0KCQiA1ZGcBhCoARIsAGQ0kkrn6CbgbC_5jI8H_Ztt4wevKlZK1AEJwwMJvfBBtL3oz0QUvN2nnJgaAiKDEALw_wcB"target="_blank"> More</a></p>
                 </div>
                     
             </div>
@@ -191,6 +207,26 @@
 
         <script src="https://kit.fontawesome.com/1d7c7e0333.js" 
         crossorigin="anonymous"></script>
-        <script src="" async defer></script>
+        <script>
+                  const nav = document.getElementById("topNav");
+            window.onscroll = function () {
+                if (window.pageYOffset >100) {
+                nav.classList.add("sticky"); 
+            } else {
+                nav.classList.remove("sticky");
+            }
+            }
+
+
+            const navButton =document.querySelector('button[aria-expanded]');
+
+            function toggleNav ({target}) {
+                const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+                navButton.setAttribute('aria-expanded', !expanded)
+
+            }
+
+            navButton.addEventListener ('click', toggleNav);
+        </script>
     </body>
 </html>

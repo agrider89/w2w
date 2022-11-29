@@ -73,36 +73,7 @@ h5 {
     
 }
 
-/* Navbar style */
-[aria-controls="navbar-Dropdown"] {
-    display:block;
-    margin-top:0px;
-}
 
-[aria-expanded="false"] ~ .navbar {
-    display: none;
-}
-
-[aria-expanded="true"] ~ .navbar {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    right: 0;
-    top: 70px;
-    background-color: #ffffff;
-   /* background-image: linear-gradient(to right, transparent, rgba(255,255,255,0.7));*/
-    width: 100%;
-    text-align: center;
-    
-    box-shadow: 0px 0px 20px rgba(52,49,75,0.1);
-}
-[aria-expanded="true"] ~ .navbar {
-    height:40vh;
-    grid-template-columns: auto;
-}
-[aria-expanded="true"] ~ nav ul {
-  flex-direction: column;
-}
 
 /* Scavenger Hunt */
 .scavenger {
@@ -237,5 +208,99 @@ select {
     text-align: center;
     margin: 0;
     margin-inline: auto;
+
+}
+
+/* nav bar styles */
+.navbar {
+    display:flex;
+    position:relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    transition: ease-in-out 0.3s;
+    padding: 1rem;
+    
+}
+
+.navbar-toggler {
+    position: relative;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.navbar-toggler span {
+  
+    cursor:pointer;
+    pointer-events: none;
+}
+
+[aria-controls="navbar-Dropdown"] {
+    display:none;
+
+}
+    
+
+
+
+.navbar-list {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap:5px;
+    position: relative;
+    width: 100px;
+    top: -30px;
+    transform-origin: top;
+    transition: transform 1s ease-in-out ;
+
+}
+
+
+
+nav li, a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    margin: 0;
+ 
+}
+.navbar-toggler {
+    color: #fff;
+    position: relative;
+    background-color: transparent;
+    border: 0 transparent;
+
+}
+
+
+
+[aria-controls="navbar-Dropdown"] {
+    display:block;
+    margin-top: 0px;
+  
+}
+
+[aria-expanded="false"] ~ .navbar {
+    display: none;
+}
+
+[aria-expanded="true"] ~ .navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    color: #fff;
+    opacity: 80%;
+    width: 100px;
+    right: 10px;
+    height: 130px;
+    font-size: 14px;
+    box-shadow: 0px 0px 20px rgba(52,49,75,0.1);
+    margin-left: auto;
+  
 
 }
